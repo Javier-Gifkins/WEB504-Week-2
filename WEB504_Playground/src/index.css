@@ -1,3 +1,29 @@
+/* Fade-in on load for sections */
+.animated {
+  animation: fade-in 1.2s ease-in;
+}
+/* Delayed fade-in for dramatic effect */
+.fade-in-delay {
+  animation: fade-in 1.2s 0.5s backwards;
+}
+/* Fade-in keyframes */
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Bounce-in animation for About section */
+.bounce-in {
+  animation: bounceIn 1s;
+}
+@keyframes bounceIn {
+  0%   { transform: scale(0.8); opacity: 0; }
+  50%  { transform: scale(1.05); opacity: 1; }
+  70%  { transform: scale(0.95);}
+  100% { transform: scale(1);}
+}
+
+
 /* Big, purple first letter in each paragraph for style */
 p::first-letter {
   font-size: 200%;
